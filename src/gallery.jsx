@@ -42,10 +42,6 @@ function Gallery (){
     }
 
 
-
-
-
-
     return(
         <>
 
@@ -55,8 +51,8 @@ function Gallery (){
                     return curr?.Search?.map((burr)=>{
                         return(
                             <li key={burr.imdbID}>
-                                <figure>
-                                    <img src={burr.Poster} alt="no image avai" />
+                                <figure >
+                                    <img   src={burr.Poster} alt="no image avai" />
                                 </figure>
                                 <h1>{burr.Title}</h1>
 

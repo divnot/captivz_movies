@@ -86,15 +86,15 @@ function Feed(){
                     
 
                 </div>
-                <div className="Robo">
+              { /*  <div className="Robo">
 
                 <figure>
-                        <img src="src\images\feedback robo.png" alt="feedback " />
+                        <img id=" insv"  src="src\images\feedback robo.png" alt="feedback " />
                     </figure>
 
 
-                </div>
-            </div>
+                </div>*/}
+            </div>  
         </section>
 
       
