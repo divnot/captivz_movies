@@ -1,5 +1,6 @@
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import React from "react";
+import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function Gallery (){
 
@@ -17,7 +18,7 @@ function Gallery (){
             queryFn:Unlim,
             initialPageParam:1,
             getNextPageParam:(_lastPage, allPages)=>{
-                if(allPages.length < 1){
+                if(allPages.length < 5){
                     return allPages.length +1;
                 }
                 else{
@@ -50,11 +51,11 @@ function Gallery (){
                 data?.pages?.map((curr)=>{
                     return curr?.Search?.map((burr)=>{
                         return(
-                            <li key={burr.imdbID}>
+                            <li   key={burr.imdbID}>
                                 <figure >
-                                    <img   src={burr.Poster} alt="no image avai" />
+                                    <img   className="img-thumbnail" style={{boxShadow:"0px 0px 2px 1px green", margin:"1rem" , height:"45rem" }}  src={burr.Poster} alt="no image avai" />
                                 </figure>
-                                <h1>{burr.Title}</h1>
+                                <h1 style={{alignItems:"center",margin:"1rem" ,textShadow:"0px 0px 0.5rem green"}}>{burr.Title}</h1>
 
                             </li>
                         )
@@ -67,7 +68,7 @@ function Gallery (){
 
         <button  style={{ boxShadow:"0px 0px 3px 2px green", position:"relative", left:"60rem"}}onClick={fetchNextPage}>load</button>
 
-        <h1>its gallery</h1>
+       
         
         
         </>

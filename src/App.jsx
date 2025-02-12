@@ -12,10 +12,12 @@ import Gallery from './gallery'
 import Feed from './feedback'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Innerhome from './innerhome'
+import Nopage from './nopage'
 const router = createBrowserRouter([
   {
     path:"/",
     element:<Together/>,
+    errorElement:<Nopage/>,
     children:[
       {
         path:"/",
@@ -42,8 +44,8 @@ const router = createBrowserRouter([
       {
         path:"/feedback",
         element:<Feed/>,
-      }
-     
+      },
+    
     ]
   }
 ])

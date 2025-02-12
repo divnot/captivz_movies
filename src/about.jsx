@@ -46,7 +46,7 @@ function About(){
 
       <div id="about" >
 
-        <h1  id="taken">Centering the data </h1>
+        <h1  id="taken">Kids </h1>
 
 </div>
 

@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import React, { useEffect } from "react";
 import { useParams } from "react-router";
-
+import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function Innerhome(){
 
     const {id}=useParams();
@@ -25,6 +25,7 @@ const inner = async()=>{
    const {data , isLoading} = useQuery({
     queryKey:["/posts"],
     queryFn:inner,
+   
    })
    if(isLoading){
     return(
@@ -39,10 +40,26 @@ const inner = async()=>{
         <>
         <div className="innerd">
 
-        <figure>
-            <img  className="mostinner" src={data.Poster} alt="no image" />
+
+            <div>
+
+            <figure>
+            <img  className="mostinner img-thumbnail" src={data.Poster} alt="no image" />
         </figure>
 
+            </div>
+            <div>
+                <h1 style={{textDecoration:"underline", textShadow:"0px 0px 5px green"}} className="text-success">{data.Title}</h1>
+                <h2>Release:   {data.Year}</h2>
+                <p>{data.Actors}</p>
+                <h3>{data.imdbRating}</h3>
+                <p>{data.Runtime} <span>{data.Language}</span></p>
+                <button className="btn btn-success">Watch Now</button>
+
+            </div>
+
+
+       
 
 
         </div>
