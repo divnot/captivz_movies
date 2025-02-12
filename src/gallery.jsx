@@ -37,7 +37,7 @@ function Gallery (){
         return(
             <>
 
-            <h1>...loaidng</h1>
+            <h1>...loading</h1>
             
             </>
         )
@@ -47,7 +47,7 @@ function Gallery (){
     return(
         <>
 
-        <ul style={{listStyleType:"none"}}>
+        <ul className="respon" style={{listStyleType:"none"}}>
             {
                 data?.pages?.map((curr)=>{
                     return curr?.Search?.map((burr)=>{

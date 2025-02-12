@@ -92,10 +92,10 @@ if(isloading){
       </section> */}
 
        
-       <section>
+       
       
 
-       <ul  >
+       <ul  className="respon" >
        
        {
        taking?.map((curr)=>{
@@ -117,7 +117,7 @@ if(isloading){
 
 
 
-       </section>
+       
      
       {/* <ul  >
        

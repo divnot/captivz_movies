@@ -1,6 +1,6 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -160,23 +160,9 @@ html{
 #ok{
     text-align: center;
 }
-ul{
-   display: grid;
-   grid-template-columns: repeat(3, minmax( 300px , 1fr)) ;
-   align-items: center;
-   margin: 1rem;
-  
-}
 
-#wow{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    gap:3rem;
-   position: fixed;
-    list-style-type: none; 
 
-}
+
 
 
 .secondnav{
@@ -201,9 +187,7 @@ ul{
     
 }
 
-nav{
-    max-width: auto;
-}
+
 
 #bar{
     display: none;
@@ -350,6 +334,7 @@ align-items: center;
 
 .three{
     background-color: black;
+    width: 100vw;
     height: auto;
 }
 
@@ -477,9 +462,45 @@ li{
     }
 }
 
+.head{
+    background-color: aqua;
+    
+    height: 7rem;
+}
+
+.mainnav{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(3rem , 1fr));
+
+}
+
+#innernav2 ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    
+
+}
+
+
+
+
+.pop{
+    display: none;
+}
+
+
+.respon{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30rem , 1fr));
+}
+
+
+
+
 @media (width < 1065px ){
-    ul{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
+    .respon{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr ));
 
     }
    
@@ -548,33 +569,6 @@ li{
 }
 
 
-@media (width < 1200px) {
-    #hide{
-      display: none;
-       
-    }
-    #hide1{
-        display: none;
-         
-      }
-      #hide2{
-        display: none;
-         
-      }
-      #hide3{
-        display: none;
-         
-      }
-      #hide4{
-        display: none;
-         
-      }
-      #bar{
-        display: block;
-    }
-  
-    
-}
 
 @media (width < 1200px) {
     .innerd{
@@ -584,6 +578,39 @@ li{
   
     
 }
+
+
+
+@media (width < 1200px) {
+
+    .pop{
+        display: inline-block;
+        text-align: end;
+    }
+    
+   .close{
+    display: none;
+   }
+   .show{
+    position:absolute;
+    z-index: 1;
+    top:7rem;
+    left:0;
+    background-color: black;
+    width: 100%;
+   }
+
+   .show ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   }
+  
+    
+}
+
+
 
 
 
