@@ -18,8 +18,9 @@ function Gallery (){
             queryFn:Unlim,
             initialPageParam:1,
             getNextPageParam:(_lastPage, allPages)=>{
-                if(allPages.length < 5){
-                    return allPages.length +1;
+                console.log(_lastPage, allPages);
+                if(allPages.length < 1){
+                    return allPages.length +1 ;
                 }
                 else{
                     return undefined;
@@ -51,7 +52,7 @@ function Gallery (){
                 data?.pages?.map((curr)=>{
                     return curr?.Search?.map((burr)=>{
                         return(
-                            <li   key={burr.imdbID}>
+                            <li  data-aos="zoom-in"  data-aos-duration="4000"  key={burr.imdbID}>
                                 <figure >
                                     <img   className="img-thumbnail" style={{boxShadow:"0px 0px 2px 1px green", margin:"1rem" , height:"45rem" }}  src={burr.Poster} alt="no image avai" />
                                 </figure>

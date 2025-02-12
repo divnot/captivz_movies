@@ -11,7 +11,7 @@ function handleclick(){
 
   return(
         <>
-        <section id="great">
+        <section data-aos="flip-up"  data-aos-duration="4000" id="great">
 
         <img id="money"  className="img-thumbnail" src="https://cdn.svgator.com/images/2024/04/animated-turtle-in-trouble-error-page.gif" alt="404 error" />
         <button style={{width:"20rem", height:"10rem" , fontSize:"6rem" }}    onClick={handleclick} className="btn btn-success">Back</button>    

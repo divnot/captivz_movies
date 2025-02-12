@@ -41,7 +41,7 @@ const inner = async()=>{
         <div className="innerd">
 
 
-            <div>
+            <div  data-aos="flip-up"  data-aos-duration="4000">
 
             <figure>
             <img  className="mostinner img-thumbnail" src={data.Poster} alt="no image" />

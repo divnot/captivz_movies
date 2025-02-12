@@ -64,7 +64,7 @@ function handlesub(event){
                 </form>
                
                 </div>
-            <div className="two">
+            <div data-aos="fade-up"  data-aos-duration="4000" className="two1">
                 <img src="src\images\contact us.png" alt="contact us" style={{height: "45rem", width:"50rem"}}  />
 
                 

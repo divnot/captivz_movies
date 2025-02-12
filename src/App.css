@@ -10,8 +10,21 @@
     
 }
 
+#wow li:first-child{
+    margin-right: auto;
+   
+}
+
 
 .two{
+    filter: drop-shadow(0rem 0rem 0.3rem white);
+    margin-top: 4rem;
+    padding: 2rem;
+    order: 1;
+    
+}
+
+.two1{
     filter: drop-shadow(0rem 0rem 0.3rem white);
     margin-top: 4rem;
     padding: 2rem;

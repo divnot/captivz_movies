@@ -3,11 +3,10 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { NavLink } from "react-router";
 //import { Ins } from "./axiouss";
 //import { Data } from "./axiouss";
-//import Api from "./api.json"
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function Home(){
-//const[Search , setSearch]=useState("");
+
 const [ser, setser]=useState("");
 
 function handled(event){
@@ -43,9 +42,6 @@ function speak(){
 }
 
 
-  
-
-
 const {data , isloading }= useQuery(
   {
     queryKey:["/posts"], 
@@ -58,48 +54,6 @@ const taking = data?.Search?.filter((upd)=>{
 
 
 })
-//useEffect(()=>{
- // api();
-
-//},[]) 
-console.log(data);
-
-
-
-   
-//console.log(pots);
- //   const handleexe=(e)=>{
-   //   const name=e.target.name;
-  //    const value=e.target.value;
-  //    setfate((prev)=> ({...prev, [name]:value}))
-  //  }
-    
-//console.log(fate);
-   // console.log(data);
-
- //  function good(event){
-  //  const d1 = event.target.value;
-    
-   // setSearch(d1);
-   //}
-
-   //console.log(Api);
-
- /*  const find = Api.filter((timing)=> timing.title.toLowerCase().includes(Search.toLowerCase()));
-  
-  
-console.log(Search);
-
-function speak(){
-  var recognition = new webkitSpeechRecognition();
-  recognition.lang="en-GB";
-  recognition.onresult= function(event){
-    console.log(event)
-    document.getElementById("enter").value=event.results[0][0].transcript;
-  }
-  recognition.start();
-} */
-
 
 if(isloading){
   return(
@@ -129,24 +83,13 @@ if(isloading){
 
        </main>
 
-      {/* <input id="enter" type="text" placeholder="search" value={Search} onChange={good} />
-       
-      <button onClick={speak}>speak</button> */}
-
-    { /*  <div style={{margin:"1rem"}} >
-      <span >    <input type="text" value={ser} onChange={handled}  id="enter" style={{position:"relative" , bottom:"4rem" , left:"50em", height:"3rem", width:"25rem", boxShadow:"0px 0px 1rem red"}}  placeholder="search"  />                                                                                               </span>
-      <span> <button  style={{position:"relative" , bottom:"4rem" , left:"50rem", height:"3rem", width:"5rem", boxShadow:"0px 0px 1rem red"}}  onClick={speak}><img src="src\images\mic.png" alt="no voice" /></button></span>
-
-      </div> */}
-
-
-      <section>
-      <div  className="search" style={{margin:"0.5rem"}} >
+      {/*   <section>
+    <div  className="search" style={{margin:"0.5rem"}} >
       <span >    <input type="text" value={ser} onChange={handled}  id="enter" style={{position:"relative" , bottom:"4rem" , left:"50em", height:"3rem", width:"25rem", boxShadow:"0px 0px 1rem red"}}  placeholder="search"  />                                                                                               </span>
       <span> <button  style={{position:"relative" , bottom:"4rem" , left:"50rem", height:"3rem", width:"5rem", boxShadow:"0px 0px 1rem red"}}  onClick={speak}><img src="src\images\mic.png" alt="no voice" /></button></span>
 
       </div>
-      </section>
+      </section> */}
 
        
        <section>
@@ -157,7 +100,7 @@ if(isloading){
        {
        taking?.map((curr)=>{
            return(
-             <li className="t1 img-thumbnail" key={curr.imdbID}>
+             <li  data-aos="zoom-in"  data-aos-duration="4000" className="t1 img-thumbnail" key={curr.imdbID}>
                <figure>
                  <img style={{width:"30rem", height:"30rem"}} src={curr.Poster} alt="not found" />
                </figure>
@@ -248,31 +191,22 @@ if(isloading){
           
           <div className="threehome">
           
-            <div  className="homeprice">
+            <div   data-aos="zoom-in"  data-aos-duration="4000" className="homeprice">
               <img className="homesmall"     src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/premium-quality-logo-design-template-45b0208ecd5d0291b3679b581b7b999c_screen.jpg?ts=1660200227" alt="nohting" />
                <h1 style={{color:"green", margin:"1rem" , fontSize:"2.5rem"}}>$299</h1>
             </div     >
-            <div  className="homeprice">
+            <div  data-aos="zoom-in"  className="homeprice">
             <img  className="homesmall" src="https://img.freepik.com/free-vector/gold-color-editable-text-luxury-black-background_331749-351.jpg?semt=ais_hybrid" alt="nohting" />
             <h1 style={{color:"green",margin:"1rem"  , fontSize:"2.5rem"}} >$199</h1>
             </div>
-            <div   className="homeprice" >
+            <div  data-aos="zoom-in" className="homeprice" >
             <img  className="homesmall" src="https://img.freepik.com/premium-photo/silver-chrome-logo-with-word-silver-it_1151350-27813.jpg" alt="nohting" />
             <h1  style={{color:"green",margin:"1rem"  , fontSize:"2.5rem"}}>$99</h1>
             </div>
           </div>
 
          
-        </section>
-
-
-
-
-      
-
-
-      
-      
+        </section>     
       
 
         </>

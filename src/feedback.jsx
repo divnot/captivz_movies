@@ -47,7 +47,7 @@ function Feed(){
 
         <section>
             <div className="feedback">
-                <div  className="Robo">
+                <div  data-aos="fade-up"  data-aos-duration="4000" className="Robo">
                     <figure>
                         <img src="src\images\feedback robo.png" alt="feedback " />
                     </figure>

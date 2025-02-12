@@ -25,6 +25,7 @@ function handleclose(){
     
         
        <nav  >
+
        <ul  id="handlenav1" className="secondnav"  >
        <li  onClick={handleclose}  style={{ color:"white", width:"5rem" , height:"5rem"}}><img src="src\images\close.png" alt="close" /></li>
         <NavLink className={"btn btn-outline-success"} to={"/"}><li style={{ color:"white", fontWeight:"20px"}}>Home</li></NavLink>
@@ -35,6 +36,7 @@ function handleclose(){
        </ul>
       
        <ul id="wow"  className="fixed-top "  style={{display:"flex" , backgroundColor:"rgba(0,0,0,0.8)"  }}>
+        <li  style={{ color:"white", height:"4rem" , width:"4rem"}}> <img src="src\images\titledino.png" alt="noimage" /></li>
         <NavLink  className={"btn btn-outline-success "} id="hide"to={"/"}><li style={{ color:"white", fontWeight:"20px"}}>Home</li></NavLink>
        <NavLink   className={"btn btn-outline-success"} id="hide1"to={"/about"}> <li style={{ color:"white"}}>Kids</li> </NavLink> 
        <NavLink  className={"btn btn-outline-success "}id="hide2"to={"/contact"}> <li style={{ color:"white"}}>Contact</li> </NavLink> 
