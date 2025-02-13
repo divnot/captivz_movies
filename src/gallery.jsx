@@ -7,7 +7,7 @@ function Gallery (){
 
     const Unlim=async ({PageParams})=>{
 
-        const tim= await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=f909d2a4&s=titanic&page=${PageParams}`);
+        const tim= await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=f909d2a4&s=titanic&page=${PageParams}`);
         const time1= tim.json();
         return time1;
     }

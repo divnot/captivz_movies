@@ -9,7 +9,7 @@ function Innerhome(){
 
 const inner = async()=>{
        try{
-        const data = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=f909d2a4`);
+        const data = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=f909d2a4`);
         const data1= await data.json();
         console.log(data1)
         return data1;

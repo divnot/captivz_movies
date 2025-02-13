@@ -16,7 +16,7 @@ function Home(){
  */
 const api= async()=>{
   try {
-    const result = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=f909d2a4&s=titanic&page=1")
+    const result = await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=f909d2a4&s=titanic&page=1")
     const output = await result.json();
    return output;
     
