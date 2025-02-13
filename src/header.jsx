@@ -37,7 +37,7 @@ function handlemal(){
       <div  className="mainnav">
 
       <div  className="innernav">
-       <a href="#" ><img className="log1" style={{height:"6.5rem ", width:"6.5rem" , padding:"1rem"}} src="src\images\titledino.png" alt ="logo" /></a>
+       <a href="#" ><img className="log1" style={{height:"6.5rem ", width:"6.5rem" , padding:"1rem"}} src="https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2024/05/jurassic-world-logo-png-editable.png?fit=1000%2C1000&ssl=1" alt ="logo" /></a>
 
       </div>
 

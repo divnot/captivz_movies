@@ -10,10 +10,8 @@
     
 }
 
-#wow li:first-child{
-    margin-right: auto;
-   
-}
+
+
 
 
 .two{
@@ -344,6 +342,7 @@ align-items: center;
 .homeprice{
     width:25rem;
     aspect-ratio: 1;
+    margin: 2rem;
   
 }
 
@@ -393,14 +392,20 @@ img:hover{
     display: none;
 }
 .innerd{
-    width: 40%;
-    aspect-ratio: 1;
+    width: 100%;
+    height: 100%;
 }
 .mostinner{
-    width: 80%;
+    width: 90%;
     aspect-ratio: 1;
     box-shadow: 0px 0px 1px 2px green;
+    margin: 30rem;
 }
+
+.bottom{
+    margin-bottom: 3rem;
+}
+  
 #imag{
     width: 100vw;
     height: 100vh;
@@ -482,13 +487,6 @@ li{
     margin-right: 1rem;
 }
 
-
-
-
-
-
-
-
 #innernav2 ul{
     display: flex;
     justify-content: flex-end;
@@ -513,6 +511,7 @@ li{
     display: grid;
     grid-template-columns: repeat(3, minmax(30rem , 1fr));
 }
+
 
 
 

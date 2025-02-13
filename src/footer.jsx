@@ -27,13 +27,13 @@ function Footer(){
             <h1 style={{fontVariant:"small-caps" , textDecoration:"underline"}} className="foot"><strong>Contact</strong></h1>
                 <ul  className="foo1">
                { /* <li style={{fontVariant:"small-caps" , textDecoration:"underline"}} className="foot"><strong>Contact</strong></li>*/}
-                    <li  className="foot"><a href="mailto:divyansh377590@gmail.com" ><img className="temp" src="src\images\linkedin.png" alt="no image" /></a></li>
-                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="src\images\app.png" alt="no image" /></a></li>
-                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="src\images\gmail.png" alt="no image" /></a></li>
-                    <li style={{width:"6rem", height:"5rem"}}  className="foot"><img  className="temp" src="src\images\facebook.png" alt="no post" /></li>
-                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="src\images\phone-call.png" alt="no image" /></a></li>
-                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="src\images\github.png" alt="no image" /></a></li>
-                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="src\images\twitter.png" alt="no image" /></a></li>
+                    <li  className="foot"><a href="mailto:divyansh377590@gmail.com" ><img className="temp" src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="no image" /></a></li>
+                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="no image" /></a></li>
+                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="no image" /></a></li>
+                    <li style={{width:"6rem", height:"5rem"}}  className="foot"><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="no post" /></li>
+                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/1538/1538493.png" alt="no image" /></a></li>
+                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/25/25657.png" alt="no image" /></a></li>
+                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="no image" /></a></li>
                    
                 </ul>
 

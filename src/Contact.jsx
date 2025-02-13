@@ -65,7 +65,7 @@ function handlesub(event){
                
                 </div>
             <div data-aos="fade-up"  data-aos-duration="4000" className="two1">
-                <img src="src\images\contact us.png" alt="contact us" style={{height: "45rem", width:"50rem"}}  />
+                <img  className="shape" src="https://cdn3d.iconscout.com/3d/premium/thumb/chat-support-robot-3d-icon-download-in-png-blend-fbx-gltf-file-formats--call-modern-assistant-and-ai-pack-science-technology-icons-5753295.png?f=webp" alt="contact us" style={{height: "45rem", width:"50rem" }}  />
 
                 
                 </div>

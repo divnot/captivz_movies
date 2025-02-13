@@ -49,7 +49,7 @@ function Feed(){
             <div className="feedback">
                 <div  data-aos="fade-up"  data-aos-duration="4000" className="Robo">
                     <figure>
-                        <img src="src\images\feedback robo.png" alt="feedback " />
+                        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/chat-support-robot-3d-icon-download-in-png-blend-fbx-gltf-file-formats--call-modern-assistant-and-ai-pack-science-technology-icons-5753295.png?f=webp" alt="feedback " />
                     </figure>
 
                 </div>
