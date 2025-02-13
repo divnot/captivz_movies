@@ -57,15 +57,7 @@ const inner = async()=>{
                 <button className="btn btn-success">Watch Now</button>
 
             </div>
-
-
-       
-
-
-        </div>
-       
-        
-        
+        </div>   
         
         </>
     )
