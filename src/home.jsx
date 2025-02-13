@@ -7,18 +7,13 @@ import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function Home(){
 
-const [ser, setser]=useState("");
+//const [ser, setser]=useState("");
 
-function handled(event){
+/* function handled(event){
   return setser(event.target.value);
 
 }
-
-
-
-  
-
-
+ */
 const api= async()=>{
   try {
     const result = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=f909d2a4&s=titanic&page=1")
@@ -31,7 +26,7 @@ const api= async()=>{
   }
 }
 
-function speak(){
+/*function speak(){
   var recognition = new webkitSpeechRecognition();
   recognition.lang="en-GB";
   recognition.onresult= function(event){
@@ -40,20 +35,20 @@ function speak(){
   }
   recognition.start();
 }
+ */
 
-
-const {data , isloading }= useQuery(
+const {data , isloading }=useQuery(
   {
     queryKey:["/posts"], 
     queryFn:api,
     
   }
 )
-const taking = data?.Search?.filter((upd)=>{
+ /*const taking = data?.Search?.filter((upd)=>{
   return upd.Title.toLowerCase().includes(ser.toLowerCase());
 
 
-})
+}) */
 
 if(isloading){
   return(
@@ -98,7 +93,7 @@ if(isloading){
        <ul  className="respon" >
        
        {
-       taking?.map((curr)=>{
+       data?.Search?.map((curr)=>{
            return(
              <li  data-aos="zoom-in"  data-aos-duration="4000" className="t1 img-thumbnail" key={curr.imdbID}>
                <figure>
@@ -111,13 +106,7 @@ if(isloading){
 
          })
        }
-     </ul>
-
-
-
-
-
-       
+     </ul>      
      
       {/* <ul  >
        
@@ -136,9 +125,7 @@ if(isloading){
             })
           }
         </ul>*/}
-
-
-        <section>
+       <section>
         <div  style={{height:"10rem"}}>
     
  <span  style={{fontSize:"4rem"  , display:"flex" , justifyContent:"center", alignItems:"center", flexDirection:"row"}} className="badge bg-danger">Premium</span>
@@ -183,8 +170,8 @@ if(isloading){
 
         <section>
 
-        <div  style={{height:"10rem"}}class="alert alert-danger alert-dismissible fade show">
-    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <div  style={{height:"10rem"}} className="alert alert-danger alert-dismissible fade show">
+    <button type="button" className="btn-close" data-bs-dismiss="alert"></button>
    <span style={{fontSize:"3rem"  , display:"flex" , justifyContent:"center", alignItems:"center", flexDirection:"row"}} > <strong>Packeges</strong>   </span>  
   </div>
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router";
-import { IoReorderThree } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -37,7 +37,7 @@ function handlemal(){
       <div  className="mainnav">
 
       <div  className="innernav">
-        <h1>divyansh</h1>
+       <a href="#" ><img className="log1" style={{height:"6.5rem ", width:"6.5rem" , padding:"1rem"}} src="src\images\titledino.png" alt ="logo" /></a>
 
       </div>
 
@@ -51,20 +51,20 @@ function handlemal(){
 <NavLink  className={"btn btn-outline-success"}to={"/feedback"}> <li style={{ color:"white"}}>Feedback</li> </NavLink> 
 </ul> */}
 
-<ul   >
+<ul  className="spc"  >
 
-<NavLink   to={"/"}><li >Home</li></NavLink>
-<NavLink   to={"/about"}> <li >Kids</li> </NavLink> 
-<NavLink to={"/contact"}> <li >Contact</li> </NavLink> 
-<NavLink to={"/gallery"}> <li >Gallery</li> </NavLink> 
-<NavLink  to={"/feedback"}> <li>Feedback</li> </NavLink> 
+<NavLink className="btn btn-outline-success"  to={"/"}><li >Home</li></NavLink>
+<NavLink className="btn btn-outline-success"   to={"/about"}> <li >Kids</li> </NavLink> 
+<NavLink className="btn btn-outline-success" to={"/contact"}> <li >Contact</li> </NavLink> 
+<NavLink className="btn btn-outline-success" to={"/gallery"}> <li >Gallery</li> </NavLink> 
+<NavLink  className="btn btn-outline-success" to={"/feedback"}> <li>Feedback</li> </NavLink> 
 
 
 </ul>
 </nav>
 
 <div className="pop">
-    <button  onClick={handlemal} style={{color:"black"}}>click</button>
+    <button  onClick={handlemal} style={{ backgroundColor:"black" , height:"5rem" ,fontSize:"3rem", padding:"1rem , 1rem"}}><GiHamburgerMenu /></button>
 </div>
 
 
