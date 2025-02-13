@@ -313,7 +313,7 @@ align-items: center;
 }
 .three{
     display: grid;
-    grid-template-columns: repeat(3, minmax(35rem, 1fr));
+    grid-template-columns: repeat(2, minmax(35rem, 1fr));
     border: 2px solid green;
    height: 25rem;
    
@@ -333,7 +333,8 @@ align-items: center;
 .three{
     background-color: black;
     width: 100vw;
-    height: auto;
+    height: 100vh;
+   
 }
 
 .kids{
@@ -347,8 +348,8 @@ align-items: center;
 }
 
 img{
-    width:80%;
-    height: 80%;
+    width:40%;
+    height: 40%;
    
 }
 
@@ -628,6 +629,20 @@ li{
     
 }
 
+
+@media(width < 700px){
+   figure img{
+    width: 0.2rem;
+    
+   }
+}
+
+@media(width < 700px){
+    .lo{
+     width: 1rem;
+     
+    }
+ }
 
 
 

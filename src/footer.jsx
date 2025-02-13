@@ -5,13 +5,13 @@ function Footer(){
         <>
       <footer>
         <div  className=" three">
-            <div>
-                <ul className="foo">
-                    <li  style={{width:"50rem"}} className="foot"><img src="https://images.squarespace-cdn.com/content/v1/5f4dbb9a476f95001ff9bf1d/0aa60175-1614-4599-8fa1-08fe8b1d760a/Captivz+Logo" alt="no image"/></li>
+           { /* <div>
+                <ul className="foo1">
+                    <li   className="foot"><img  className="lo" src="https://images.squarespace-cdn.com/content/v1/5f4dbb9a476f95001ff9bf1d/0aa60175-1614-4599-8fa1-08fe8b1d760a/Captivz+Logo" alt="no image"/></li>
                     
                 </ul>
 
-            </div>
+            </div> */}
             <div>
                 <ul  className="foo">
                     <li style={{fontVariant:"small-caps" , textDecoration:"underline"}} className="foot"><strong>Support</strong></li>
