@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { SiRedragon } from "react-icons/si";
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -37,7 +38,8 @@ function handlemal(){
       <div  className="mainnav">
 
       <div  className="innernav">
-       <a href="#" ><img className="log1" style={{height:"6.5rem ", width:"6.5rem" , padding:"1rem"}} src="https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2024/05/jurassic-world-logo-png-editable.png?fit=1000%2C1000&ssl=1" alt ="logo" /></a>
+        <span style={{fontSize:"2rem" , color:"green"}}> <strong>  ⓒⓐⓟⓣⓘⓥⓔⓩ    </strong></span>
+       <a href="#" ><h1 style={{width:"10rem" , height:"5rem" }} >  <span>  <SiRedragon /></span></h1></a>
 
       </div>
 

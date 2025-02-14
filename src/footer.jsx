@@ -27,13 +27,13 @@ function Footer(){
             <h1 style={{fontVariant:"small-caps" , textDecoration:"underline"}} className="foot"><strong>Contact</strong></h1>
                 <ul  className="foo1">
                { /* <li style={{fontVariant:"small-caps" , textDecoration:"underline"}} className="foot"><strong>Contact</strong></li>*/}
-                    <li  className="foot"><a href="mailto:divyansh377590@gmail.com" ><img className="temp" src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="no image" /></a></li>
+                    <li  className="foot"><a href="https://www.linkedin.com/in/morgan-wen-5633b62b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" ><img className="temp" src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="no image" /></a></li>
                     <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="no image" /></a></li>
-                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="no image" /></a></li>
+                    <li  className="foot"> <a href="mailto:divyansh377590@gmail.com" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="no image" /></a></li>
                     <li style={{width:"6rem", height:"5rem"}}  className="foot"><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="no post" /></li>
                     <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/1538/1538493.png" alt="no image" /></a></li>
-                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/25/25657.png" alt="no image" /></a></li>
-                    <li  className="foot"> <a href="tel:238289329" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="no image" /></a></li>
+                    <li  className="foot"> <a href="https://github.com/divnot/captivz_movies" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/25/25657.png" alt="no image" /></a></li>
+                    <li  className="foot"> <a href="https://x.com/morgan377590?t=XhFTmoLfrI2xkS90gc6sIQ&s=09" ><img  className="temp" src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="no image" /></a></li>
                    
                 </ul>
 

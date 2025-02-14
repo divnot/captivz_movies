@@ -20,8 +20,10 @@ function Feed(){
 
         event.preventDefault();
 
-        if(!reci) return ;
+        if(feed=="") return ;
         setreci((prev)=> [...prev, feed] );
+       
+
 
     }
 
@@ -29,7 +31,9 @@ function Feed(){
     const handledel =(value)=>{
         const del= reci.filter((curr1)=>{
             return curr1 !== value;
+
         })
+        console.log(del);
         setreci(del);
     }
     console.log(reci);
