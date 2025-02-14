@@ -3,17 +3,18 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { NavLink } from "react-router";
 //import { Ins } from "./axiouss";
 //import { Data } from "./axiouss";
+import { FaMicrophone } from "react-icons/fa";
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function Home(){
 
-//const [ser, setser]=useState("");
+const [ser, setser]=useState("");
 
-/* function handled(event){
+ function handled(event){
   return setser(event.target.value);
 
 }
- */
+ 
 const api= async()=>{
   try {
     const result = await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=f909d2a4&s=titanic&page=1")
@@ -26,7 +27,7 @@ const api= async()=>{
   }
 }
 
-/*function speak(){
+function speak(){
   var recognition = new webkitSpeechRecognition();
   recognition.lang="en-GB";
   recognition.onresult= function(event){
@@ -35,7 +36,7 @@ const api= async()=>{
   }
   recognition.start();
 }
- */
+ 
 
 const {data , isloading }=useQuery(
   {
@@ -44,11 +45,11 @@ const {data , isloading }=useQuery(
     
   }
 )
- /*const taking = data?.Search?.filter((upd)=>{
+ const taking = data?.Search?.filter((upd)=>{
   return upd.Title.toLowerCase().includes(ser.toLowerCase());
 
 
-}) */
+}) 
 
 if(isloading){
   return(
@@ -78,22 +79,22 @@ if(isloading){
 
        </main>
 
-      {/*   <section>
-    <div  className="search" style={{margin:"0.5rem"}} >
-      <span >    <input type="text" value={ser} onChange={handled}  id="enter" style={{position:"relative" , bottom:"4rem" , left:"50em", height:"3rem", width:"25rem", boxShadow:"0px 0px 1rem red"}}  placeholder="search"  />                                                                                               </span>
-      <span> <button  style={{position:"relative" , bottom:"4rem" , left:"50rem", height:"3rem", width:"5rem", boxShadow:"0px 0px 1rem red"}}  onClick={speak}><img src="src\images\mic.png" alt="no voice" /></button></span>
+       
+    <div  className="search" >
+         <input type="text" style={{width:"20rem"}} value={ser} onChange={handled}  id="enter"  placeholder="search"  />                                                                                               
+      <button  className="btn-success" onClick={speak}><FaMicrophone /></button>
 
       </div>
-      </section> */}
+     
 
        
-       
+     
       
 
        <ul  className="respon" >
        
        {
-       data?.Search?.map((curr)=>{
+       taking?.map((curr)=>{
            return(
              <li  data-aos="zoom-in"  data-aos-duration="4000" className="t1 img-thumbnail" key={curr.imdbID}>
                <figure>
